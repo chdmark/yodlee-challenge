@@ -1,0 +1,21 @@
+<!-- read from json file -->
+<!-- Type  -->
+
+<div id='info' ng-controller="View1Ctrl">
+	<table class="table table-hover">
+	  <tr ng-repeat="creditInfo in creditInfo">
+	  	<td><input id="input-1" type="checkbox"></td>
+	  	<td>{{creditInfo.type}}</td>
+	  	<td>{{creditInfo.amount}}</td>
+	  	<td>four</td>
+	  </tr>
+	</table>
+</div>
+
+<script>
+$('#input-1').checkboxpicker({
+  html: true,
+  offLabel: '<span class="glyphicon glyphicon-remove">',
+  onLabel: '<span class="glyphicon glyphicon-ok">'
+});
+</script>
