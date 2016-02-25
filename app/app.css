@@ -33,3 +33,16 @@
   list-style-type: square;
 
 }
+
+.custom-box {
+  width: 25px;
+}
+
+.type-of-payment {
+  width: 200px;
+  display: block;
+}
+
+.amount-of-payment {
+  display: block;
+}
