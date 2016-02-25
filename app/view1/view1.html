@@ -1,15 +1,23 @@
 <!-- read from json file -->
 <!-- Type  -->
+<div class="container">
+	<div id='info' ng-controller="View1Ctrl">
+		<table class="table table-hover">
+		  <tr ng-repeat="creditInfo in creditInfo">
+		  	<td><input id="input-1" type="checkbox"></td>
+		  	<td>{{creditInfo.type}}</td>
+		  	<td>${{creditInfo.amount}}</td>
+		  	<td>
+		  		<div class="progress">
+			  		<div class="progress-bar" role="progressbar" aria-valuenow="70%" style="width:70%">
+			  			<span class="sr-only">70% complete></span>
+			  		</div>
+		  		</div>
 
-<div id='info' ng-controller="View1Ctrl">
-	<table class="table table-hover">
-	  <tr ng-repeat="creditInfo in creditInfo">
-	  	<td><input id="input-1" type="checkbox"></td>
-	  	<td>{{creditInfo.type}}</td>
-	  	<td>{{creditInfo.amount}}</td>
-	  	<td>four</td>
-	  </tr>
-	</table>
+		  	</td>
+		  </tr>
+		</table>
+	</div>
 </div>
 
 <script>
