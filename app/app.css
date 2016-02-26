@@ -58,10 +58,22 @@
 
 .table {
   border: 1px solid red;
+  width: 900px;
+  /*height: 500px;*/
+ 
+}
+
+.td {
+  height: 80px;
+  border: 1px solid black;
 }
 
 .percentage-bar{
   border: 1px solid orange;
+  vertical-align: middle;
+
+}
+.progress, .progress-bar{
   vertical-align: middle;
 }
 
