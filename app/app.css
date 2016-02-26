@@ -36,13 +36,32 @@
 
 .custom-box {
   width: 25px;
+  border: 1px solid green;
 }
 
 .type-of-payment {
-  width: 200px;
-  display: block;
+  width: 90px;
+  /*display: block;*/
+  border: 1px dotted purple;
 }
 
 .amount-of-payment {
-  display: block;
+  /*display: block;*/
+  border: 1px solid blue;
+  width: 90px;
 }
+
+.table>tbody>tr>td {
+  border-top: none;
+  vertical-align: middle;
+}
+
+.table {
+  border: 1px solid red;
+}
+
+.percentage-bar{
+  border: 1px solid orange;
+  
+}
+
