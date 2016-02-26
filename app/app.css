@@ -1,13 +1,26 @@
 /* app css stylesheet */
 
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
 @keyframes slideInRight {
     from    { transform:translateX(100%); }
     to      { transform: translateX(0); }
 }
 
-.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+/*.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
 
 .ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+
+.page-specifc-page.ng-enter        { animation:slideInRight 0.5s both ease-in; }
+.page-specific-page.ng-leave        { animation:slideOutLeft 0.5s both ease-in; }*/
+.page-.page-home{
+  z-index: -100;
+}
+.page-.page-specific {
+  position: absolute;
+
+}
 
 .menu {
   list-style: none;
