@@ -45,6 +45,11 @@
   border: 1px dotted purple;
 }
 
+.specific-payment {
+  width: 200px;
+  border: 1px solid purple;
+}
+
 .amount-of-payment {
   /*display: block;*/
   border: 1px solid blue;
