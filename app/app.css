@@ -1,0 +1,106 @@
+/* app css stylesheet */
+
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/*.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+
+.ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+
+.page-specifc-page.ng-enter        { animation:slideInRight 0.5s both ease-in; }
+.page-specific-page.ng-leave        { animation:slideOutLeft 0.5s both ease-in; }*/
+.page-.page-home{
+  z-index: -100;
+}
+.page-.page-specific {
+  position: absolute;
+
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.list-group li {
+  list-style-type: square;
+
+}
+
+.custom-box {
+  width: 25px;
+  border: 1px solid green;
+}
+
+.type-of-payment {
+  width: 90px;
+  /*display: block;*/
+  border: 1px dotted purple;
+}
+
+.specific-payment {
+  width: 200px;
+  border: 1px solid purple;
+}
+
+.amount-of-payment {
+  /*display: block;*/
+  border: 1px solid blue;
+  width: 90px;
+}
+
+.table>tbody>tr>td {
+  border-top: none;
+  vertical-align: middle;
+}
+
+.table {
+  border: 1px solid red;
+  width: 900px;
+  /*height: 500px;*/
+ 
+}
+
+.td {
+  height: 80px;
+  border: 1px solid black;
+}
+
+.percentage-bar{
+  border: 1px solid orange;
+  vertical-align: middle;
+
+}
+.progress, .progress-bar{
+  vertical-align: middle;
+}
+
