@@ -6,8 +6,14 @@
 		<table class="table">
 		  <tr ng-repeat="creditInfo in creditInfo">
 		  	<td class="custom-box"><input id="input-1" type="checkbox"></td>
-		  	<td class="type-of-payment"><h4>{{creditInfo.type}}</h4></td>
-		  	<td class="amount-of-payment">${{creditInfo.amount}}</td>
+		  	<td class="type-of-payment">
+		  		<div class="stack-info">
+		  			{{creditInfo.type}}
+		  		</div>
+		  		<div class="stack-info">
+		  			<h4>${{creditInfo.amount}}</h4>
+		  		</div>
+		  	</td>
 		  	<td class="percentage-bar">
 		  		<div class="progress">
 			  		<div class="progress-bar" role="progressbar" aria-valuenow="70%" style="width:70%">
